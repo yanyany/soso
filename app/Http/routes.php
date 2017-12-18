@@ -11,13 +11,10 @@
 |
 */
 require_once __DIR__.'/home.php';
+require_once __DIR__.'/homeinterface.php';
 
 
 //正式环境
-/*
- * 登录页面
- */
-Route::get('login',function(){
-   return view('login/login');
-});
-Route::any('logins/{name}/password/{password}',['uses'=>'LoginController@login']);
+
+/*Route::any('logins/{name}/password/{password}',['uses'=>'LoginController@login']);*/
+

@@ -125,7 +125,7 @@
 			<li>
 				<a href="./contact.html">我的账号</a>
 				<ul>
-					<li><a href="home/login">登录</a></li>
+					<li><a href="/home/login">登录</a></li>
 					<li><a href="/home/reg">注册</a></li>
 				</ul>
 			</li>

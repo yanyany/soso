@@ -13,3 +13,12 @@ Route::get('home/login', function () {
 Route::get('home/reg', function () {
     return view('home/reg');
 });
+Route::get('home/personReg',function(){
+   return view('home/personReg');
+});
+Route::get('home/schoolReg',function(){
+    return view('home/schoolreg');
+});
+Route::get('home/companyReg',function(){
+    return view('home/companyreg');
+});

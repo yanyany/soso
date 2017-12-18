@@ -29,12 +29,12 @@
             </div>
             <div id="zhong">
                 <ul class="three">
-                    <li><a href="/Web/Reg/companyReg">企业注册</a></li>
+                    <li><a href="/home/companyReg">企业注册</a></li>
                 </ul>
             </div>
             <div id="right">
                 <ul class="three">
-                    <li><a href="/Web/Reg/schoolReg">学校注册</a></li>
+                    <li><a href="/home/schoolReg">学校注册</a></li>
                 </ul>
             </div>
         </div>
