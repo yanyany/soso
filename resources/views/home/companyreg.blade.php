@@ -99,6 +99,7 @@
                 'sex':sex,
                 'certificateNum':certificateNum,
                 'address':address
+                'type':2
             },
             success:function(json){
                 if(json.code == 1){

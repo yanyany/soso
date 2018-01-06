@@ -22,3 +22,6 @@ Route::get('home/schoolReg',function(){
 Route::get('home/companyReg',function(){
     return view('home/companyreg');
 });
+Route::get('home/resumepersonl',function(){
+    return view('home/resumepersonl');
+});

@@ -1,67 +1,130 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://hovertree.com/login.php?gotopage=index.php -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>登录</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="{{ URL::asset('/') }}web/css/login.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="{{ URL::asset('/') }}/web/css/login.css">
+    <link type="text/css" rel="stylesheet" href="{{ URL::asset('/') }}/web/css/drag.css">
+    <script type="text/javascript" src="{{ URL::asset('/') }}/web/js//jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('/') }}/web/js/login.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('/') }}/web/js/jquery.slideunlock.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('/') }}/web/js/drag.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('/') }}/web/js/layer/2.4/layer.js"></script>
 </head>
-    <body>
-    	<div id="container">
-    		<div id="herder">
-                <div id="block"></div>
-    			<ul id="zc">
-    				<a href="#" title="注册">立即注册&gt;&gt;</a>
-    			</ul>
-            </div>
-    		<div id="main">
-    			<div id="lside"></div>
-    			<div id="rside">
-                    <ul class="woaicss_title woaicss_title_bg1" id="woaicsstitle">
-                    <li><a href="#" target="_blank" onmouseover="javascript:woaicssq(1)">微信登录</a></li>
-                    <li><a href="#" target="_blank" onmouseover="javascript:woaicssq(2)">账号登录</a></li>
-                    </ul>
-                    <div id="ewm"></div>
-                    <div class="woaicss_con" id="woaicss_con1" style="display:block;    margin-left: 100%;">
-                       <ul>
-                        <li>·<a href="#" title=""><img src={{ URL::asset('/') }}/images/ewm.jpg" alt="二维码" /></a></li>
-                       </ul>
-                     </div>
-                     <div class="woaicss_con" id="woaicss_con2" style="display:none;margin-left: 100%;">
-                       <ul>
-                        <li>账号<input type="text"  /></li>
-                        <li>密码<input type="password"  /></li>
-                        <li><button type="button" style="background:#3366cc;width:30%;margin-top: 10px;margin-left: 4%;" class="button">登录</button></li>
-                       </ul>
-                     </div>
-                    <h2 id="wc">微信扫码登录或注册</h2>
-                </div>
-    		<div id="footer">
-            <ul>
-                <li><a href="#">关于我们</a></li>
-                <li><a href="#">意见反馈</a></li>
-                <li><a href="#">加入我们</a></li>
-                <li><a href="#">商业合作</a></li>
-            </ul>
-            </div>
-            <div id="di"></div>
-    	</div>
+<body>
+<div id="head">
+    <div style="background-color: #ffffff;float:left">
+        <img src="{{ URL::asset('/') }}/web/images/logo.png" style="width:300px;height:100px"/>
     </div>
-    </body>
+    <div id="right">
+        <ul>
+            <li style="margin-right:10px">没有帐号</li>
+            <li>立即<a href="/Web/Reg/reg" style="color:#0f9ae0">注册</a></li>
+        </ul>
+    </div>
+</div>
+<div class="pagewrap" style="clear:both">
+    <div class="main">
+        <!--   <div class="header">
+              &lt;!&ndash; <div style="width:768px;margin:0px auto;">
+                   <a href="http://hovertree.com/hvtart/bjae/jftxwtko.htm">原文</a>
+                   <a href="http://hovertree.com">首页</a> <a href="http://hovertree.com/texiao/">特效</a> <a href="http://hovertree.com/menu/jquery/">jQuery</a> <a href="http://hovertree.com/hvtart/bjae/vgte3y3a.htm">Demo 2</a> <a href="http://hovertree.com/hvtart/bjae/dw0f8ytk.htm">Demo 3</a>
+                   <br />
+               </div>&ndash;&gt;
+           </div>-->
+        <br><br><br>
+        <div class="content">
+            <div class="con_left">
+                <p>登录之后您可以：</p><br>
+                <h2><img src="{{ URL::asset('/') }}/web/images/zhibiao.png" style="width:20px;height: 20px;"/>更便捷的生成简历或查阅简历；</h2><br>
+                <h2><img src="{{ URL::asset('/') }}/web/images/zhibiao.png" style="width:20px;height: 20px;"/>更便捷的寻求职位或招聘人才；</h2><br>
+                <h2><img src="{{ URL::asset('/') }}/web/images/zhibiao.png" style="width:20px;height: 20px;"/>更便捷的了解行业信息；</h2><br>
+            </div>
+            <div class="con_right">
+                <div class="con_r_top"><a href="javascript:;" class="left" style="color: rgb(153, 153, 153); border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222);">微信登录</a> <a href="javascript:;" class="right" style="color: rgb(51, 51, 51); border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(46, 85, 142);">登录管理</a></div>
+                <ul>
+                    <li class="con_r_left" style="display: none;">
+                        <div class="erweima">
+                            <div class="qrcode">
+                                <div id="output" style="width: 100%; position: relative">
+                                    <img src="{{ URL::asset('/') }}/web/images/ewm.jpg" style="width: 170px; height: 170px">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 70px">
+                            <p>微信扫一扫登录或注册</p>
+                        </div>
+                    </li>
+
+
+                    <li class="con_r_right" style="display: block;">
+                        <form name="form1" method="post" action="http://tool.hovertree.com/info/ip/" autocomplete="off">
+                            <div class="user">
+                                <div>
+                                    <span class="user-icon"></span>
+                                    <input type="text" id="userid" name="userid" placeholder="　输入账号" value="">
+                                </div>
+
+                                <div>
+                                    <span class="mima-icon"></span>
+                                    <input type="password" id="pwd" name="pwd" placeholder="　输入密码" value="">
+                                </div>
+
+                                <div id="drag" style="    margin-left: 9%;">
+                                </div>
+                                <script type="text/javascript">
+                                    $('#drag').drag();
+                                </script>
+
+                            </div><br>
+                            <!-- <button id="btn_Login" type="submit">登 录</button>-->
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="foot">
+        <ul>
+            <li>关于我们</li>
+            <li>意见反馈</li>
+            <li>加入我们</li>
+            <li>商业合作</li>
+        </ul>
+    </div>
+</div>
+<div style="border-bottom: 5px solid black;    margin-top: 20px;"></div>
+</body>
 </html>
-<script type="text/javascript" src="{{ URL::asset('/') }}/web/js/jquery-1.7.2.min.js"></script>
-<script language="javascript">
- function woaicssq(num){
- for(var id = 1;id<=4;id++)
- {
- var MrJin="woaicss_con"+id;
- if(id==num)
- document.getElementById(MrJin).style.display="block";
- else
- document.getElementById(MrJin).style.display="none";
- }
- if(num==1)
- document.getElementById("woaicsstitle").className="woaicss_title woaicss_title_bg1";
- if(num==2)
- document.getElementById("woaicsstitle").className="woaicss_title woaicss_title_bg2";
- }
+<script type="text/javascript">
+    $(document).ready(function(){
+        var hei =  document.body.scrollHeight+50;
+        $(".pagewrap").css("height",hei+'px');
+        //alert(hei);
+    })
 </script>
+<script type="text/javascript">
+    function login(){
+        var phone = $("#userid").val();
+        var password = $("#pwd").val();
+        $.ajax({
+            url:"/Api/Login/login",
+            type:"post",
+            data:{
+                'phone':phone,
+                'password':password
+            },
+            dataType:"json",
+            success:function(json){
+                layer.msg(json.msg);
+            }
+        })
+    }
+</script>
+

@@ -105,8 +105,9 @@
 			<li>
 				<a href="./blog.html">我的简历</a>
 				<ul>
-					<li><a href="./blog_post.html">Single Post</a></li>
-					<li><a href="./blog_v2.html">Alternative Version</a></li>
+					<li><a href="/home/resumepersonl">个人简历</a></li>
+					<li><a href="./blog_v2.html">工作简历</a></li>
+					<li><a href="./blog_v2.html">教育简历</a></li>
 				</ul>
 			</li>
 			<li>
