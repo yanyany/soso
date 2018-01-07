@@ -1,0 +1,48 @@
+#up{
+	width: 800px;
+	height: 360px;
+	margin: 0 auto;
+/*	background: red;*/
+}
+#lside{
+	width: 400px;
+	float: left;
+}
+#one{
+	width: 340px;
+	height: 180px;
+/*	background: red;*/
+	padding-top: 20px;
+	padding-left: 60px;
+}
+#two{
+	width: 400px;
+	height: 160px;
+	/*background: orange;*/
+}
+#two li {
+	line-height: 50px;
+}
+.lz{
+	margin-left: 30px;
+}
+#rside{
+	width: 380px;
+	height: 310px;
+	/*background: blue;*/
+	float: left;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+#rside li {
+	line-height: 50px;
+}
+#down{
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+}
+#comments{
+	resize:none;
+	margin-left: 100px;
+}

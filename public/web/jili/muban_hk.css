@@ -1,0 +1,58 @@
+#huakuai{
+	height: 30px;
+	width: 600px;
+	margin: 0 auto;
+}
+#huakuai li{
+	width: 150px;
+	height: 30px;
+	margin: 0 25px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+}
+#huakuai a{
+	font-size: 18px;
+	font-family:"微软雅黑";
+	color: #888888;
+}
+#blue a{
+	font-size: 18px;
+	font-family:"微软雅黑";
+	color: #3399cc;
+}
+#huakuai a:hover{
+	color: #3399cc;
+}
+#under{
+	height: 1px;
+	background: #888888;
+}
+#biaodan{
+	width: 1000px;
+	margin: 0 auto;
+    font-size: 15px;
+    font-family:"微软雅黑"
+}
+#anniu{
+	width: 150px;
+	margin: 0 auto;
+}
+form.blue input[type="submit"]{
+	outline: none;
+	font-size: 20px;
+	padding: 5px 5px;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	width: 150px;
+	background: #136EAC;
+}
+form.blue input[type="submit"]:hover,a.tem-btn:hover{
+background:#0F649D; 
+}
+#margin{
+	width: 1000px;
+	height: 50px;
+	/*background: red;*/
+}
