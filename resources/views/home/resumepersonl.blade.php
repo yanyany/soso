@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-<title>新建网页</title>
+<title>个人简历</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="{{ URL::asset('/') }}/web/jili/jianli_gr_a.css">
 <link rel="stylesheet" href="{{ URL::asset('/') }}/web/jili/jianli_gr_b.css">
 <link rel="stylesheet" href="{{ URL::asset('/') }}/web/jili/jianli_gr_c.css">
 <link rel="stylesheet" href="{{ URL::asset('/') }}/web/css/csh.css" />
 <link rel="stylesheet" href="{{ URL::asset('/') }}/web/css/swb.css" />
-<link rel="stylesheet" href="{{ URL::asset('/') }}/web/css/muban_hk.css" />
-<link rel="stylesheet" href="{{ URL::asset('/') }}/web/css/jianli_gr.css" />
+<link rel="stylesheet" href="{{ URL::asset('/') }}/web/jili/muban_hk.css" />
+<link rel="stylesheet" href="{{ URL::asset('/') }}/web/jili/jianli_gr.css" />
 <script type="text/javascript" src="{{ URL::asset('/') }}/web/js/jsAddress.js"></script>
 <script type="text/javascript" src="{{ URL::asset('/') }}/web/js/laydate.js"></script>
 <style type="text/css">
@@ -20,7 +20,7 @@
     <body>
     	<div id="container">
     		<div id="header">
-                <div id="logo"><a href="#"><img src="./img/logo.png" height="70px" alt="logo" /></a></div><ul>
+                <div id="logo"><a href="#"><img src="{{ URL::asset('/') }}/web/img/logo.png" height="70px" alt="logo" /></a></div><ul>
                 <li><a href="#">我的账号</a></li>
                 <li><a href="#">我的信箱</a></li>
                 <li><a href="#">我的投递</a></li>
@@ -148,6 +148,10 @@
     </body>
 </html>
 
+<script src="{{ URL::asset('/') }}/web/js/jianli_gr_a.js" charset="utf-8"></script>
+<script src="{{ URL::asset('/') }}/web/js/jianli_gr_b.js" charset="utf-8"></script>
+<script src="{{ URL::asset('/') }}/web/js/jianli_gr_c.js" charset="utf-8"></script>
+<script src="{{ URL::asset('/') }}/web/js/jianli_gr_d.js" charset="utf-8"></script>
 <script language="javascript" type="text/javascript">
 function   chkmaxsms(vobj1,vmax)   {   
   var   str=vobj1.value;   
@@ -171,8 +175,3 @@ laydate({
 })
 }();
 </script>
-
-        <script src="js/jianli_gr_a.js" charset="utf-8"></script>
-        <script src="js/jianli_gr_b.js" charset="utf-8"></script>
-        <script src="js/jianli_gr_c.js" charset="utf-8"></script>
-        <script src="js/jianli_gr_d.js" charset="utf-8"></script>
