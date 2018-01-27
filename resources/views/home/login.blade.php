@@ -21,7 +21,7 @@
     <div id="right">
         <ul>
             <li style="margin-right:10px">没有帐号</li>
-            <li>立即<a href="/Web/Reg/reg" style="color:#0f9ae0">注册</a></li>
+            <li>立即<a href="/home/reg" style="color:#0f9ae0">注册</a></li>
         </ul>
     </div>
 </div>
