@@ -52,4 +52,24 @@ class HomeloginController extends Controller{
         $result = str_replace("/connect/qrcode/", "https://open.weixin.qq.com/connect/qrcode/", $result);
         return $result; //返回页面
     }
+    /*
+     * 公司登陆接口
+     */
+    public function login(Request $request){
+        $company = $request->input();
+
+        $password = md5(md5($company['password']));
+
+        $data = DB::table('company')->where('phone', $company['phone'])->first();
+        if($data){
+            if($password != $data['password']){
+                return response()->json(['code'=>4,'msg'=>'密码错误']);
+            }else{
+                return response()->json(['code'=>1,'msg'=>'登陆成功']);
+            }
+        }else{
+            return response()->json(['code'=>3,'msg'=>'没有该用户']);
+        }
+
+    }
 }
